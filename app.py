@@ -17,11 +17,11 @@ DBNAME = st.secrets["postgres"]["DBNAME"]
 # 🔌 CONEXIÓN A SUPABASE
 # =========================================
 conn = psycopg2.connect(
-    host=db.wdsflzylpgnyvvhovref.supabase.co,
-    database=postgres,
-    user=postgres,
-    password="Nina140601**/",
-    port=5432
+    host=HOST,
+    database=DBNAME,
+    user=USER,
+    password=PASSWORD,
+    port=PORT
 )
 
 # =========================================
